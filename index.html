@@ -3,72 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px;
-        }
-        nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-        .container {
-            text-align: center;
-            padding: 50px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>BoostHive - Agencia de Marketing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <a href="index.html" class="logo">BoostHive</a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#contacto" class="cta-button">Hablemos</a>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Impulsamos tu negocio al siguiente nivel con estrategias digitales innovadoras.</h1>
+            <p>En BoostHive combinamos creatividad, tecnología y análisis de datos para transformar negocios en marcas líderes.</p>
+            <a href="#contacto" class="cta-button">Solicita una consulta gratuita</a>
+        </div>
+    </section>
 
-    <div class="container">
-        <h2>Hola, este es un sitio web básico</h2>
-        <p>Explora nuestra página para conocer más sobre nosotros.</p>
-    </div>
+    <section class="benefits">
+        <h2>¿Por qué elegir BoostHive?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Estrategias basadas en datos</h3>
+                <p>Análisis profundo y optimización constante.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Creatividad sin límites</h3>
+                <p>Diseño impactante y branding sólido.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Crecimiento acelerado</h3>
+                <p>Resultados medibles y escalables.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Acompañamiento 24/7</h3>
+                <p>Nos convertimos en tu socio estratégico.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Marketing Digital</h3>
+                <p>Estrategias de publicidad en redes sociales y SEO.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-palette"></i>
+                <h3>Branding & Identidad Visual</h3>
+                <p>Creación de marcas memorables.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Diseño Web & UX/UI</h3>
+                <p>Páginas web optimizadas y modernas.</p>
+            </div>
+        </div>
+        <a href="servicios.html" class="btn-services">Ver todos los servicios</a>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="carousel">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track">
+                <div class="testimonial">
+                    <img src="https://via.placeholder.com/100" alt="Cliente 1">
+                    <h3>Mariana López</h3>
+                    <p>CEO de TechBoost</p>
+                    <blockquote>"BoostHive transformó nuestra marca con estrategias innovadoras. ¡100% recomendados!"</blockquote>
+                </div>
+                <div class="testimonial">
+                    <img src="https://via.placeholder.com/100" alt="Cliente 2">
+                    <h3>Ricardo Pérez</h3>
+                    <p>CMO en DigitalPro</p>
+                    <blockquote>"El equipo de BoostHive nos ayudó a escalar nuestro negocio digitalmente de manera increíble."</blockquote>
+                </div>
+                <div class="testimonial">
+                    <img src="https://via.placeholder.com/100" alt="Cliente 3">
+                    <h3>Laura Fernández</h3>
+                    <p>Fundadora de MarketX</p>
+                    <blockquote>"Profesionalismo y creatividad en cada estrategia. ¡Un aliado clave para el crecimiento de nuestra empresa!"</blockquote>
+                </div>
+            </div>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="carousel-dots"></div>
+    </section>
+
+    <section class="success-cases">
+        <h2>Nuestros Casos de Éxito</h2>
+        <div class="cases-gallery">
+            <a href="proyecto1.html" class="case">
+                <img src="https://via.placeholder.com/400x300" alt="Proyecto 1">
+                <div class="case-info">
+                    <h3>TechBoost</h3>
+                    <p>Rediseñamos su identidad visual y optimizamos su presencia digital.</p>
+                </div>
+            </a>
+            <a href="proyecto2.html" class="case">
+                <img src="https://via.placeholder.com/400x300" alt="Proyecto 2">
+                <div class="case-info">
+                    <h3>DigitalPro</h3>
+                    <p>Implementamos estrategias de marketing digital que aumentaron sus ventas en un 45%.</p>
+                </div>
+            </a>
+            <a href="proyecto3.html" class="case">
+                <img src="https://via.placeholder.com/400x300" alt="Proyecto 3">
+                <div class="case-info">
+                    <h3>MarketX</h3>
+                    <p>Desarrollamos su sitio web con un diseño UX/UI optimizado para conversiones.</p>
+                </div>
+            </a>
+            <a href="proyecto4.html" class="case">
+                <img src="https://via.placeholder.com/400x300" alt="Proyecto 4">
+                <div class="case-info">
+                    <h3>EcoStyle</h3>
+                    <p>Creación de branding sostenible con impacto positivo en su audiencia.</p>
+                </div>
+            </a>
+            <a href="proyecto5.html" class="case">
+                <img src="https://via.placeholder.com/400x300" alt="Proyecto 5">
+                <div class="case-info">
+                    <h3>FoodieHub</h3>
+                    <p>Optimización SEO y marketing en redes sociales para aumentar su tráfico.</p>
+                </div>
+            </a>
+            <a href="proyecto6.html" class="case">
+                <img src="https://via.placeholder.com/400x300" alt="Proyecto 6">
+                <div class="case-info">
+                    <h3>FitLife</h3>
+                    <p>Desarrollo de e-commerce con integración de pasarelas de pago seguras.</p>
+                </div>
+            </a>
+        </div>
+        <a href="portafolio.html" class="btn-cta">Ver más proyectos</a>
+    </section>
+
+    <section class="faq-section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq">
+                <button class="faq-question">
+                    <span>¿Qué servicios ofrece BoostHive?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Ofrecemos marketing digital, branding, desarrollo web y estrategias personalizadas para potenciar tu negocio.</p>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <button class="faq-question">
+                    <span>¿Cómo puedo solicitar una consulta?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Puedes solicitar una consulta gratuita a través de nuestro formulario de contacto o escribiéndonos por WhatsApp.</p>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <button class="faq-question">
+                    <span>¿Cuánto tiempo toma ver resultados en una estrategia de marketing digital?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Depende de la estrategia aplicada, pero generalmente los primeros resultados se ven en 3 a 6 meses.</p>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <button class="faq-question">
+                    <span>¿Cuáles son los costos de los servicios?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Los costos varían según el servicio. Contáctanos para una cotización personalizada.</p>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <button class="faq-question">
+                    <span>¿BoostHive trabaja con empresas de cualquier sector?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Sí, trabajamos con empresas de diversas industrias, desde tecnología hasta retail y educación.</p>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <button class="faq-question">
+                    <span>¿Cómo garantizan los resultados?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Usamos análisis de datos, optimización constante y estrategias adaptadas a cada cliente para garantizar resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="cta-texto">
+            <h2>Tu negocio merece brillar. <br> Hablemos hoy mismo.</h2>
+        </div>
+        <div class="cta-formulario">
+            <form action="#" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="footer-col">
+                <img src="ruta-del-logo.png" alt="BoostHive Logo" class="footer-logo">
+                <p>BoostHive impulsa marcas con estrategias digitales innovadoras y resultados medibles.</p>
+            </div>
+    
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <!-- Columna 3: Redes sociales -->
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Segunda fila: Información legal -->
+        <div class="footer-legal">
+            <p>Copyright BoostHive © 2025. Todos los derechos reservados.</p>
+        </div>
     </footer>
+    
 
+    <script src="script.js" defer></script>
+    
 </body>
 </html>

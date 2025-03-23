@@ -1,0 +1,753 @@
+/* VARIABLES */
+:root {
+    /* Colores */
+    --color-primario: #003F5C;
+    --color-secundario: #7A5195;
+    --color-acento: #2FBEA2;
+    --color-texto: #E0E0E0;
+    --color-fondo: #FFFFFF;
+    
+    /* Tipografía */
+    --fuente-primaria: "Space Grotesk", sans-serif;
+    --fuente-secundaria: "IBM Plex Sans", sans-serif;
+    --fuente-terciaria: "Montserrat", sans-serif;
+
+    /* Tamaños */
+    --tam-logo: 2rem;
+    --tam-menu: 1.1rem;
+    --tam-boton: 1.2rem;
+    --peso-regular: 400;
+    --peso-bold: 600;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-secundaria);
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+/* HEADER */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;   
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* LOGO */
+.logo {
+    font-size: var(--tam-logo);
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+nav ul li a {
+    font-size: var(--tam-menu);
+    font-weight: var(--peso-regular);
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--color-acento);
+}
+
+/* BOTÓN CTA */
+.cta-button {
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+    font-size: var(--tam-boton);
+    font-weight: var(--peso-bold);
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+}
+
+/* SECCIÓN HERO */
+.hero {
+    background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
+    color: var(--color-primario);
+    text-align: center;
+    padding: 6em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+/* CONTENIDO DEL HERO */
+.hero-content {
+    max-width: 45rem;
+}
+
+/* TÍTULO */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 1em;
+}
+
+/* SUBTÍTULO */
+.hero p {
+    font-size: 1.5rem;
+    font-weight: var(--peso-regular);
+    font-family: var(--fuente-secundaria);
+    margin-bottom: 2em;
+}
+
+/* BOTÓN CTA */
+.hero .cta-button {
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+    font-size: var(--tam-boton);
+    font-weight: var(--peso-bold);
+    text-decoration: none;
+    padding: 1em 1.8em;
+    border-radius: 0.5em;
+    transition: background 0.3s ease-in-out;
+}
+
+.hero .cta-button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+}
+
+/* SECCIÓN BENEFICIOS */
+.benefits {
+    text-align: center;
+    padding: 5em 2em;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+/* TÍTULO PRINCIPAL */
+.benefits h2 {
+    font-size: 2rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 2em;
+}
+
+/* GRID DE BENEFICIOS */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2em;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+/* TARJETAS */
+.benefit-card {
+    background-color: var(--color-secundario);
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-card:hover {
+    transform: translateY(-0.3em);
+}
+
+/* ICONOS */
+.benefit-card i {
+    font-size: 3rem;
+    color: var(--color-acento);
+    margin-bottom: 1em;
+}
+
+/* SUBTÍTULOS */
+.benefit-card h3 {
+    font-size: 1.5rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 0.5em;
+}
+
+/* TEXTOS */
+.benefit-card p {
+    font-size: 1.2rem;
+    font-weight: var(--peso-regular);
+    font-family: var(--fuente-secundaria);
+}
+
+/* SECCIÓN SERVICIOS */
+.services {
+    text-align: center;
+    padding: 5em 2em;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+/* TÍTULO PRINCIPAL */
+.services h2 {
+    font-size: 2rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 2em;
+}
+
+/* GRID DE SERVICIOS */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2em;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+/* TARJETAS DE SERVICIOS */
+.service-card {
+    background-color: var(--color-secundario);
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-0.3em);
+}
+
+/* ICONOS */
+.service-card i {
+    font-size: 3rem;
+    color: var(--color-acento);
+    margin-bottom: 1em;
+}
+
+/* SUBTÍTULOS */
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 0.5em;
+}
+
+/* TEXTOS */
+.service-card p {
+    font-size: 1.2rem;
+    font-weight: var(--peso-regular);
+    font-family: var(--fuente-secundaria);
+}
+
+/* BOTÓN CTA */
+.btn-services {
+    display: inline-block;
+    margin-top: 3em;
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    text-decoration: none;
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+    border-radius: 0.5em;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-services:hover {
+    background-color: var(--color-secundario);
+}
+
+/* SECCIÓN TESTIMONIOS */
+.testimonials {
+    text-align: center;
+    padding: 5em 2em;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+/* TÍTULO */
+.testimonials h2 {
+    font-size: 2rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 2em;
+}
+
+/* CARRUSEL */
+.carousel {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* TRACK DEL CARRUSEL */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* TARJETAS DE TESTIMONIOS */
+.testimonial {
+    min-width: 100%;
+    padding: 2em;
+    text-align: center;
+}
+
+/* IMÁGENES */
+.testimonial img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+/* NOMBRE */
+.testimonial h3 {
+    font-size: 1.5rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 0.3em;
+}
+
+/* CARGO */
+.testimonial p {
+    font-size: 1.2rem;
+    font-weight: var(--peso-regular);
+    font-family: var(--fuente-secundaria);
+    color: var(--color-secundario);
+    margin-bottom: 1em;
+}
+
+/* BLOQUE DE TEXTO */
+.testimonial blockquote {
+    font-size: 1.3rem;
+    font-weight: var(--peso-regular);
+    font-family: var(--fuente-secundaria);
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    padding: 1.5em;
+    border-radius: 0.5em;
+}
+
+/* BOTONES DE NAVEGACIÓN */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* NAVEGACIÓN CON PUNTOS */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.carousel-dots button {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-secundario);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-dots button.active {
+    background-color: var(--color-acento);
+}
+
+/* SECCIÓN CASOS DE ÉXITO */
+.success-cases {
+    text-align: center;
+    padding: 5em 2em;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+/* TÍTULO */
+.success-cases h2 {
+    font-size: 2rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 2em;
+}
+
+/* GALERÍA */
+.cases-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+/* TARJETAS DE PROYECTOS */
+.case {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
+    display: block;
+}
+
+/* IMÁGENES */
+.case img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* INFO OCULTA (APARECE AL PASAR EL CURSOR) */
+.case-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 63, 92, 0.8); /* Color con opacidad */
+    color: var(--color-blanco);
+    padding: 1em;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* TEXTO DENTRO DE LAS TARJETAS */
+.case-info h3 {
+    font-size: 1.3rem;
+    font-weight: var(--peso-bold);
+    margin-bottom: 0.3em;
+}
+
+.case-info p {
+    font-size: 1rem;
+    font-weight: var(--peso-regular);
+}
+
+/* EFECTO HOVER */
+.case:hover img {
+    transform: scale(1.1);
+}
+
+.case:hover .case-info {
+    transform: translateY(0);
+}
+
+/* BOTÓN CTA */
+.btn-cta {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 2em;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    font-weight: var(--peso-bold);
+    border-radius: 0.5em;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-cta:hover {
+    background-color: var(--color-primario);
+    color: #fff;
+}
+
+/* SECCIÓN FAQ */
+.faq-section {
+    background-color: var(--color-fondo);
+    padding: 5em 2em;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+    margin-bottom: 2em;
+}
+
+/* CONTENEDOR DE PREGUNTAS */
+.faq-container {
+    max-width: 50rem;
+    margin: 0 auto;
+    background: var(--color-blanco);
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+}
+
+/* PREGUNTAS */
+.faq {
+    border-bottom: 1px solid var(--color-gris);
+}
+
+.faq:last-child {
+    border-bottom: none;
+}
+
+/* BOTÓN DE PREGUNTA */
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: var(--peso-bold);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--fuente-primaria);
+    color: var(--color-primario);
+}
+
+.faq-question i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* RESPUESTA OCULTA */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    font-size: 1rem;
+    font-weight: var(--peso-regular);
+    padding: 0 1em;
+}
+
+/* CLASE ACTIVA (MUESTRA RESPUESTA) */
+.faq.active .faq-answer {
+    max-height: 10em;
+    padding: 1em;
+}
+
+.faq.active .faq-question i {
+    transform: rotate(45deg);
+}
+
+/* SECCIÓN CTA FINAL */
+.cta-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 2em;
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: var(--color-blanco);
+}
+
+/* COLUMNA IZQUIERDA – FRASE */
+.cta-texto {
+    flex: 1;
+    text-align: left;
+    padding-right: 2em;
+}
+
+.cta-texto h2 {
+    font-size: 2.5rem;
+    color: var(--color-fondo);
+    font-weight: var(--peso-bold);
+    font-family: var(--fuente-primaria);
+}
+
+/* COLUMNA DERECHA – FORMULARIO */
+.cta-formulario {
+    flex: 1;
+    background: var(--color-blanco);
+    padding: 2.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+}
+
+.cta-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-formulario label {
+    font-weight: var(--peso-bold);
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+    color: var(--color-fondo);
+}
+
+.cta-formulario input,
+.cta-formulario textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border: 1px solid var(--color-gris);
+    border-radius: 0.3em;
+    font-size: 1rem;
+    font-family: var(--fuente-primaria);
+}
+
+.cta-formulario textarea {
+    resize: none;
+}
+
+.cta-formulario button {
+    background: var(--color-primario);
+    color: var(--color-fondo);
+    padding: 1em;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.2rem;
+    font-weight: var(--peso-bold);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-formulario button:hover {
+    background: var(--color-secundario);
+}
+
+/* FOOTER */
+.footer {
+    background: var(--color-primario);
+    color: var(--color-fondo);
+    padding: 4em 2em;
+    text-align: center;
+}
+
+/* Contenedor del footer */
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Columnas */
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Logo del footer */
+.footer-logo {
+    max-width: 8em;
+    margin-bottom: 1em;
+}
+
+/* Enlaces rápidos */
+.footer-col h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+    font-weight: var(--peso-bold);
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 0.5em 0;
+}
+
+.footer-col ul li a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-col ul li a:hover {
+    color: var(--color-secundario);
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-links a {
+    color: var(--color-fondo);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: var(--color-secundario);
+    transform: scale(1.2);
+}
+
+/* Segunda fila: Información legal */
+.footer-legal {
+    margin-top: 3em;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cta-final {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-texto {
+        padding-right: 0;
+        margin-bottom: 2em;
+    }
+
+    .footer-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+}
