@@ -375,6 +375,7 @@ nav ul li a:hover {
 }
 
 .prev {
+    z-index: 1;
     left: 0;
 }
 
